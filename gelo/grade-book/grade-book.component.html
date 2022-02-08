@@ -1,0 +1,59 @@
+
+<div class="buo">
+    <div class="card1" style="width: 21rem">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Grade Form</h5>
+          </div>
+      <div class="form-floating mb-3">
+        <input type="text" #namebox class="form-control" id="floatingInput" placeholder="1" (keyup)=getName(namebox.value)/>
+        <label for="floatingInput">Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" #subbox class="form-control" id="floatingInput" placeholder="1" (keyup)=getSubject(subbox.value)/>
+        <label for="floatingInput">Subject</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="number" #prelimbox class="form-control" id="floatingInput" placeholder="1" (keyup)=getPrelim(prelimbox.value)/>
+        <label for="floatingInput">Prelim Grade</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="number" #midtermbox class="form-control" id="floatingInput" placeholder="1" (keyup)=getMidterm(midtermbox.value)/>
+        <label for="floatingInput">Midterm Grade</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="number" #finalsbox class="form-control" id="floatingInput" placeholder="1" (keyup)=getFinal(finalsbox.value)/>
+        <label for="floatingInput">Final grade</label>
+      </div>
+      <button (click)="displayGrade($event)" class="compute-grade">{{display}}</button>
+     </div> 
+     <div class="result">
+         <h3>Hello {{DisplayName}}!</h3>
+         <h4>Average for the subject {{DisplaySubject}}</h4>
+         <h4> is: {{DisplayAveg}}</h4>
+     </div>
+    <div class="card2">
+        <div class="card-body" style="width: 20rem">
+        <h5 class="card-title">Results</h5>
+        </div>
+        <br>
+    <div class="form-floating mb-3">
+        <h5 class="card-title">Student Name: {{DisplayName}}</h5>
+      </div>
+      <br>
+      <div class="form-floating mb-3">
+        <h5 class="card-title">Subject: {{DisplaySubject}}</h5>
+      </div>
+      <br>
+      <div class="form-floating mb-3">
+        <h5 class="card-title">Prelim Grade: {{DisplayPrelim}}</h5>
+      </div>
+      <br>
+      <div class="form-floating mb-3">
+        <h5 class="card-title">Midterm Grade: {{DisplayMidterm}}</h5>
+      </div>
+      <br>
+      <div class="form-floating mb-3">
+        <h5 class="card-title">Final Grade: {{DisplayFinal}}</h5>
+      </div>
+      </div>
+</div>

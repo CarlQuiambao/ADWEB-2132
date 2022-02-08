@@ -1,0 +1,37 @@
+.card1{
+    background-color: rgb(192, 192, 192);
+    margin-left: 20%;
+    margin-top: 5%;
+    border-radius: 5%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.card2{
+    background-color: rgb(192, 192, 192);
+    margin-right: 20%;
+    margin-top: 5%;
+    border-radius: 5%;
+    text-align: center;
+    
+}
+.buo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.compute-grade{
+    border-radius: 50px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.result{
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 190px;
+    border-radius: 10px;
+}
+
+.form-control{
+    border-radius: 50px;
+    
+}
